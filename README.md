@@ -2,6 +2,8 @@
 
 ***[OUTDATED] [PoC]** Magnit bonus card numbers &amp; QR code generator and saver*
 
+https://rdavydov.github.io/magnitqr/
+
 Was used "in the field" to check the bonus card balances. :)
 
 Card numbers are bruteforced and checked on their validity using the Luhn algorithm.
