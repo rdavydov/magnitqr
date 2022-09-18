@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	
+	<link href="css.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	
+	<script src="jquery-3.4.1.min.js"></script>`
+	
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<title><< Магнит >></title>
+</head>
+<body>
+	
+	<script>
+		function toggleFullScreen() {
+  if (!document.fullscreenElement &&
+      !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement ) {
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    } else if (document.documentElement.msRequestFullscreen) {
+      document.documentElement.msRequestFullscreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullscreen) {      
+      document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    }
+  }
+}
+
+    function maxWindow() {
+        window.moveTo(0, 0);
+
+        if (document.all) {
+            top.window.resizeTo(screen.availWidth, screen.availHeight);
+        }
+
+        else if (document.layers || document.getElementById) {
+            if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth) {
+                top.window.outerHeight = screen.availHeight;
+                top.window.outerWidth = screen.availWidth;
+            }
+        }
+    }
+
+  </script>
+<div class="container">
+	<div class="container__inner">
+		<div class="container__left">
+			<h1>Ростов-на-Дону<img src="v.png" class="v"></h1>
+		</div>
+		<img onclick="toggleFullScreen();" src="man.png" class="man">
+	</div>
+	<div id="rectangle">
+		<div class="bonusi">
+			<h1 class="bonusi__top" contentEditable="true">1337</h1>
+			<h2 class="bonusi__bottom">бонусов</h2>
+		
+		</div>
+
+		<div class="ash">
+			<img src="shtrih.png" class="shtrih">
+		</div>
+	</div>
+	<div class="container2">
+		<div class="lvl">
+			<h1>Текущий уровень: 0,5%</h1>
+			<img src="v.png" class="v">
+		</div>
+		<div class="vigodno">
+			<h1>Выгодно</h1>
+			<h2 class="all">ВСЕ</h2>
+		</div>
+	</div>
+
+	<div class="menu">
+
+        <div class="menu_content">
+          <img src="logo.png" alt="" class="menu_img">
+          <span class="menu_span" id="menu_span_a">Мой Магнит</span>
+        </div>
+        <div class="menu_content">
+          <img src="shops.png" alt="" class="menu_img">
+          <span class="menu_span">Магазины</span>
+        </div>
+        <div class="menu_content">
+          <img src="lines.png" alt="" class="menu_img">
+          <span class="menu_span">Список</span>
+        </div>
+        <div class="menu_content">
+          <img src="sup.png" alt="" class="menu_img">
+          <span class="menu_span">Отзыв</span>
+        </div>
+
+  </div>
+
+</div>
+<div class="zatemnenie">
+	<div class="okno">
+        <div id="panel">
+        	<button id="btnDown">< < <</button>
+        	<input type="number" name="bonus" size="15" maxlength="30" value="7000001508180984" step="8" id="bonus">
+			<!--input class="okno_submit" type="submit" name="submit" value=":)"-->
+			<button id="btnUp">> > ></button><br><br>
+			<button class="okno_submit" id="btnChange">SET #</button><span style="width: 100px;"></span>
+			<button id="btnSav">SAVE <</button>
+			<input type="number" name="inpBal" size="5" maxlength="5" value="" id="inpBal">
+		</div>
+		
+		<div id="toggleDipy">
+			<h3 class="pokazite1">Покажите экран на кассе для зачисления<br/></h3>
+			<h3 class="pokazite2">или списания бонусов</h3>
+		</div>
+		<ol id="dipy">
+		</ol>
+		<canvas id="ash2"><p>no js!</p></canvas>
+	</div>
+</div>
+
+<script type="application/javascript" src="qrcodegen.js"></script>
+<script type="application/javascript" src="qrcodegen-output-demo.js"></script>
+</body></html>
