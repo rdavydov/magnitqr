@@ -1,4 +1,9 @@
 # magnitqr
+![](https://img.shields.io/github/license/rdavydov/magnitqr?style=for-the-badge&logo=github&color=purple&logoColor=green)
+![](https://img.shields.io/github/stars/rdavydov/magnitqr?style=for-the-badge&logo=github&color=blue&logoColor=green)
+![](https://img.shields.io/github/forks/rdavydov/magnitqr?style=for-the-badge&logo=github&color=blue&logoColor=green)
+![](https://img.shields.io/github/watchers/rdavydov/magnitqr?style=for-the-badge&logo=github&color=blue&logoColor=green)
+![](https://img.shields.io/website?url=https%3A%2F%2Frdavydov.github.io%2Fmagnitqr%2F?logo=github&logoColor=green&style=for-the-badge)
 
 ***[OUTDATED] [PoC]** Magnit bonus card numbers &amp; QR code generator and saver*
 
